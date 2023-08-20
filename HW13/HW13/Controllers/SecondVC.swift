@@ -7,17 +7,15 @@
 
 import UIKit
 
-class SecondVC: UIViewController {
-    
+final class SecondVC: UIViewController {
     var dataString: String?
     weak var firstVC: FirstVC?
     
-    @IBOutlet weak var backButtonAction: UIButton!
-    @IBOutlet weak var textLable: UILabel!
+    @IBOutlet private var backButtonAction: UIButton!
+    @IBOutlet private var textLable: UILabel!
+    @IBOutlet private var textView: UITextView!
     
-    @IBOutlet weak var textView: UITextView!
-    
-    private func setupUI(){
+    private func setupUI() {
         textView.layer.cornerRadius = 15
         textView.isEditable = false
         backButtonAction.layer.cornerRadius = 15
@@ -27,10 +25,9 @@ class SecondVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
     }
+
     @IBAction func backButtonAction(_ sender: Any) {
         dismiss(animated: true)
     }
-    
 }

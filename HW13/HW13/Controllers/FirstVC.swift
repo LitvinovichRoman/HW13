@@ -7,13 +7,13 @@
 
 import UIKit
 
-class FirstVC: UIViewController {
-    @IBOutlet var textLable: UILabel!
-    @IBOutlet var firstButton: UIButton!
-    @IBOutlet var secondButton: UIButton!
-    @IBOutlet weak var fourButton: UIButton!
-    @IBOutlet weak var thirdButton: UIButton!
-    
+final class FirstVC: UIViewController {
+    @IBOutlet private var textLable: UILabel!
+    @IBOutlet private var firstButton: UIButton!
+    @IBOutlet private var secondButton: UIButton!
+    @IBOutlet private var fourButton: UIButton!
+    @IBOutlet private var thirdButton: UIButton!
+
     private func setupUI() {
         firstButton.layer.cornerRadius = 15
         secondButton.layer.cornerRadius = 15
@@ -31,30 +31,28 @@ class FirstVC: UIViewController {
     @IBAction func goToThirdVC(_ sender: UIButton) {
         let vc = ThirdVC(nibName: "ThirdVC", bundle: nil)
         vc.dataString = secondButton.titleLabel?.text
-        
+
         navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     @IBAction func goToFouthWithoutSegue() {
         let storyboard = UIStoryboard(name: "SecondStoryboard", bundle: nil)
         guard let fouthVC = storyboard.instantiateViewController(withIdentifier: "FouthVC") as? FouthVC
         else {
             return
         }
-        
+
         fouthVC.dataString = thirdButton.titleLabel?.text
         present(fouthVC, animated: true)
-        //navigationController?.pushViewController(fouthVC, animated: true)
-
-        
+        // navigationController?.pushViewController(fouthVC, animated: true)
     }
-    
+
     @IBAction func unwindToFirstVC(_ unwindSegue: UIStoryboardSegue) {
         if unwindSegue.source is FouthVC {
             print("Fouth view controller")
         }
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToSecondVC",
            let secondVC = segue.destination as? SecondVC,
