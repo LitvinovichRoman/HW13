@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EA9-M0-p8r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FirstVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FirstVC" customModule="HW13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4Ji-gF-XI8">
+                                <rect key="frame" x="20" y="243" width="390" height="247.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCz-rE-JGg">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="34.333333333333336"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title=" George Gordon Byron - Sun of the sleepless ">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.74867326021194458" green="0.86320561170578003" blue="0.85288852453231812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goToSecondVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wLk-qY-grg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTu-o0-1cI">
+                                        <rect key="frame" x="0.0" y="64.333333333333314" width="390" height="34.333333333333343"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="William Henry Davies -  Leisure">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.74867326021194458" green="0.86320561170578003" blue="0.85288852453231812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goToThirdVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="y3z-cq-Xkl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edG-PQ-p16">
+                                        <rect key="frame" x="0.0" y="128.66666666666669" width="390" height="34.333333333333343"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="William Butler Yeats - When You Are Old ">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.74867326021194458" green="0.86320561170578003" blue="0.85288852453231812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goToFouthWithoutSegue" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Iuk-uk-kJt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IJ-2Z-Wp5">
+                                        <rect key="frame" x="0.0" y="193" width="390" height="54.333333333333343"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Kevin Varrone - I wrote sitting across the table from you">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.72795200347900391" green="0.8395313024520874" blue="0.82948035001754761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="IfY-T3-duC" kind="show" identifier="goToFiveVC" id="raZ-WA-zrs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top english poems" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXJ-DO-PFa">
+                                <rect key="frame" x="20" y="133" width="390" height="50.666666666666657"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.86707442749999997" green="1" blue="0.90122645909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NXJ-DO-PFa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="1hA-WJ-Pxx"/>
+                            <constraint firstItem="4Ji-gF-XI8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="140" id="Bjw-cg-pal"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NXJ-DO-PFa" secondAttribute="trailing" constant="20" id="jmg-6A-5sH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4Ji-gF-XI8" secondAttribute="trailing" constant="20" id="mJU-Wb-YQf"/>
+                            <constraint firstItem="NXJ-DO-PFa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rP0-d4-Hhh"/>
+                            <constraint firstItem="4Ji-gF-XI8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="uHA-ua-4Zt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UmK-l4-c5V"/>
+                    <connections>
+                        <outlet property="firstButton" destination="hCz-rE-JGg" id="K6w-ZX-cDN"/>
+                        <outlet property="fourButton" destination="7IJ-2Z-Wp5" id="c4Y-Fq-2r3"/>
+                        <outlet property="secondButton" destination="TTu-o0-1cI" id="TQ4-Jq-Uyh"/>
+                        <outlet property="textLable" destination="NXJ-DO-PFa" id="zfp-xu-apo"/>
+                        <outlet property="thirdButton" destination="edG-PQ-p16" id="7mw-o4-csZ"/>
+                        <segue destination="dDe-xK-bzI" kind="presentation" identifier="goToSecondVC" modalPresentationStyle="fullScreen" id="fah-Er-uhk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--ThirdStoryboard-->
+        <scene sceneID="6RK-8W-Eii">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThirdStoryboard" id="IfY-T3-duC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cX6-Qh-AjZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbo-cK-SI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1530" y="255"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="Nqj-BK-16v">
+            <objects>
+                <viewController id="dDe-xK-bzI" customClass="SecondVC" customModule="HW13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbR-Xk-i00" customClass="Sec">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NhO-Da-i1V">
+                                <rect key="frame" x="30" y="60" width="370" height="713.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p46-qa-bN1">
+                                        <rect key="frame" x="156" y="0.0" width="58" height="36.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="29"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfc-aP-EIo">
+                                        <rect key="frame" x="20" y="56.666666666666686" width="330" height="602"/>
+                                        <color key="backgroundColor" red="0.72711950120000002" green="0.8343246983" blue="0.83659701880000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="pSW-Ei-Fk7"/>
+                                            <constraint firstAttribute="height" constant="602" id="tKT-tG-ae8"/>
+                                        </constraints>
+                                        <string key="text">Sun of the sleepless! Melancholy star!
+Whose tearful beam glows tremulously far,
+That show’st the darkness thou canst not dispel,
+How like art thou to joy remember’d well!
+
+So gleams the past, the light of other days,
+Which shines, but warms not with its powerless rays;
+A night-beam Sorrow watcheth to behold,
+Distinct, but distant — clear, but oh, how cold! </string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="KohinoorGujarati-Regular" family="Kohinoor Gujarati" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6o-tg-3Al">
+                                        <rect key="frame" x="100" y="678.66666666666663" width="170" height="35"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="hCP-7r-dTe"/>
+                                            <constraint firstAttribute="height" constant="35" id="w0i-eA-YIb"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Back"/>
+                                        <connections>
+                                            <action selector="backButtonAction:" destination="dDe-xK-bzI" eventType="touchUpInside" id="hGl-t0-XgB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4U4-Ld-S8h"/>
+                        <color key="backgroundColor" red="0.76169079539999995" green="0.87445473669999996" blue="0.87451177840000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NhO-Da-i1V" firstAttribute="top" secondItem="4U4-Ld-S8h" secondAttribute="top" constant="60" id="ejC-p7-nsX"/>
+                            <constraint firstItem="4U4-Ld-S8h" firstAttribute="trailing" secondItem="NhO-Da-i1V" secondAttribute="trailing" constant="30" id="lAJ-TM-d10"/>
+                            <constraint firstItem="NhO-Da-i1V" firstAttribute="leading" secondItem="4U4-Ld-S8h" secondAttribute="leading" constant="30" id="sFH-I8-Sov"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButtonAction" destination="Z6o-tg-3Al" id="e5p-Ii-75c"/>
+                        <outlet property="textLable" destination="p46-qa-bN1" id="YM2-f0-NB4"/>
+                        <outlet property="textView" destination="Dfc-aP-EIo" id="5Zu-qI-Ph5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxL-lB-s6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1739" y="-162"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2on-oI-5nN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EA9-M0-p8r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Vr-Kg-ckB">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="tnI-1t-IK7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvT-0V-3bR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+</document>
